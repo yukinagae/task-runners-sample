@@ -1,0 +1,17 @@
+version: "3"
+
+tasks:
+  tidy:
+    desc: Tidy modfiles, format and lint .go files
+    cmds:
+      - go mod tidy -v
+      - go fmt ./...
+      - gofmt -s -w .
+  test:
+    desc: Test the Go modules within this package
+    cmds:
+      - go test -v ./...
+  dev:
+    desc: Run the application
+    cmds:
+      - go run cmd/main.go
