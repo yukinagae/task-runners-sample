@@ -57,7 +57,7 @@ task: Available tasks for this project:
 
 ## [just (Rust)](https://github.com/casey/just)
 
-To install [just](https://github.com/casey/just), run `brew install just`.
+To install [just](https://github.com/casey/just), run `cargo install just`.
 
 - Configuration file: `justfile`
 
@@ -71,4 +71,9 @@ just dev
 
 ```bash
 $ just --list
+Available recipes:
+    default
+    dev     # Run the application
+    test    # Test the Go modules within this package
+    tidy    # Tidy modfiles, format and lint .go files
 ```
